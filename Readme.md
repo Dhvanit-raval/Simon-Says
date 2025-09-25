@@ -1,0 +1,1 @@
+A simple project with the help of HTML,CSS & JS (simon-says game).

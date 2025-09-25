@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 0;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.btn {
+    height: 9.375rem;
+    width: 9.375rem;
+    margin: 1rem;
+    border: 0.5rem solid black;
+    border-radius: 20%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+
+.flash {
+    background-color: white;
+}
+
+
+.userflash {
+    background-color: #ffeb3b;
+    border-color: #ffeb3b;
+}
+
+
+@media (min-width: 48rem) {
+    .btn {
+        height: 15.625rem;
+        width: 15.625rem;
+        border-width: 0.625rem;
+    }
+
+    .btn-container {
+        gap: 2.5rem;
+    }
+}
